@@ -209,7 +209,3 @@ To contribute:
 🎓 Computer Science Student
 📧 [bitar.marco21@gmail.com](mailto:bitar.marco21@gmail.com)
 🌐 [GitHub](https://github.com/MarcoBitar) | [LinkedIn](https://www.linkedin.com/in/marco-bitar-545046285)
-
----
-
-Would you like me to include your `.gitignore` file right below this (so you can copy both in one go)?
