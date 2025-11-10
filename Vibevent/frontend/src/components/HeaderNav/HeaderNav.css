@@ -1,0 +1,75 @@
+/* === Tab Navigation Container === */
+.header-nav {
+  display: flex;
+  justify-content: center;           /* center tabs horizontally */
+  align-items: center;
+  gap: 6rem;                          /* spacing between tabs */
+  background-color: #fafafa;         /* soft neutral background */
+  border-radius: 30px;               /* pill-shaped container */
+  margin: 0rem auto 1rem;            /* center with bottom spacing */
+  max-width: 700px;
+  flex-wrap: wrap;                   /* allow wrapping on smaller screens */
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+/* === Individual Tab Button === */
+.nav-tab {
+  flex: 0 0 auto;                    /* prevent shrinking/growing */
+  min-width: 130px;
+  padding: 0.4rem 1rem;
+  height: 40px;
+  line-height: 1;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #444;
+  border-radius: 20px;              /* pill shape */
+  transition: all 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Hover State === */
+.nav-tab:hover {
+  background-color: #f3f3f3;
+}
+
+/* === Active Tab Styling === */
+.nav-tab.active {
+  background: #f3f0ff;
+  color: #5c00ff;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+/* === Tablet Breakpoint: max-width 1500px === */
+@media (max-width: 1500px) {
+  .header-nav {
+    gap: 1rem;                       /* tighter spacing */
+  }
+  .nav-tab {
+    min-width: 110px;
+    font-size: 0.95rem;
+    padding: 0.35rem 0.8rem;
+  }
+}
+
+/* === Mobile Breakpoint: max-width 480px === */
+@media (max-width: 480px) {
+  .header-nav {
+    max-width: 100%;
+    justify-content: flex-start;     /* left-align for scrollable tabs */
+    overflow-x: auto;
+    padding: 0 0.5rem;
+  }
+  .nav-tab {
+    min-width: 100px;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    flex: 0 0 auto;
+  }
+}

@@ -1,0 +1,54 @@
+/* === Leaderboard Switcher Container === */
+.leaderboard-switcher {
+  display: flex;                  /* vertical stack layout */
+  flex-direction: column;
+  gap: 1.5rem;                    /* spacing between sections */
+  padding: 1rem 0;                /* vertical padding */
+}
+
+/* === Tab Navigation Container === */
+.tabs {
+  display: flex;
+  justify-content: center;       /* center tabs horizontally */
+  align-items: center;
+  gap: 3rem;                      /* spacing between tab buttons */
+  background-color: white;
+  border-radius: 30px;           /* pill-shaped container */
+  padding: 0.3rem;
+  max-width: 700px;
+  margin-bottom: 2rem;
+  margin: auto;                  /* center container */
+}
+
+/* === Individual Tab Button === */
+.tabs button {
+  flex: 0 0 auto;                /* prevent shrinking/growing */
+  min-width: 140px;
+  padding: 0.5rem 1.2rem;
+  height: 40px;
+  line-height: 1;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #444;
+  border-radius: 20px;           /* pill shape */
+  transition: all 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Hover State === */
+.tabs button:hover {
+  background-color: #f3f3f3;
+}
+
+/* === Active Tab Styling === */
+.tabs button.active {
+  background-color: #f3f0ff;
+  color: #5c00ff;
+  font-weight: 600;
+  box-shadow: none;
+}

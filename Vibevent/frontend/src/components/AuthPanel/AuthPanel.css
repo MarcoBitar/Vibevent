@@ -1,0 +1,85 @@
+/* === Fullscreen Auth Wrapper === */
+.auth-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: url('../../assets/Campus Image.jpg') center/cover no-repeat; /* full background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* allows overlay and card layering */
+}
+
+/* === Dark Overlay with Blur === */
+.auth-overlay {
+  position: absolute;
+  inset: 0; /* top/right/bottom/left: 0 */
+  background: rgba(40, 0, 70, 0.55); /* semi-transparent purple tint */
+  backdrop-filter: blur(3px); /* soft blur behind auth card */
+}
+
+/* === Auth Card Container === */
+.form-side {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06); /* subtle depth */
+  gap: 3rem; /* spacing between login/signup panels */
+}
+
+/* === Login/Signup Form Block === */
+.form {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2; /* floats above image panel */
+}
+
+/* === Sliding Image Panel === */
+.image-panel {
+  position: absolute;
+  top: 0;
+  left: 50%; /* default position for login mode */
+  width: 50%;
+  height: 100%;
+  background: url('../../assets/students.jpg'); /* decorative image */
+  transition: left 0.7s ease-in-out; /* smooth slide effect */
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* === Mode-specific Image Panel Positioning === */
+.form-side.login .image-panel {
+  left: 50%; /* image stays on right for login */
+}
+
+.form-side.signup .image-panel {
+  left: 0%; /* image slides left for signup */
+}
+
+/* === Tablet Breakpoint: max-width 1500px === */
+@media (max-width: 1500px) {
+  .form-side {
+    gap: 0rem; /* remove spacing between forms */
+  }
+}
+
+/* === Mobile Breakpoint: max-width 480px === */
+@media (max-width: 480px) {
+  .form-side {
+    flex-direction: column; /* stack login/signup vertically */
+    gap: 0rem;
+  }
+}

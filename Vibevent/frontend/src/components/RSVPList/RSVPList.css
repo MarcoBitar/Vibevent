@@ -1,0 +1,30 @@
+/* === RSVP Table Container === */
+.rsvp-table {
+  width: 100%;                        /* full width of parent */
+  border-collapse: collapse;         /* remove spacing between cells */
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  background-color: #fff;
+  border-radius: 8px;                /* soft rounded corners */
+  overflow: hidden;                  /* clip overflow for rounded edges */
+}
+
+/* === Table Cell Styling === */
+.rsvp-table th,
+.rsvp-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;     /* subtle row divider */
+}
+
+/* === Header Row Styling === */
+.rsvp-table th {
+  background-color: #f5f5f5;         /* light gray background */
+  font-weight: 600;
+  color: #333;
+}
+
+/* === Row Hover Feedback === */
+.rsvp-table tr:hover {
+  background-color: #f9f9f9;         /* soft highlight on hover */
+}

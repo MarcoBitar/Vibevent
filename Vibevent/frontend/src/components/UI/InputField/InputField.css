@@ -1,0 +1,57 @@
+/* === Field Container === */
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;               /* spacing between fields */
+}
+
+/* === Label Styling === */
+.input-field label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+/* === Input + Textarea Styling === */
+.input-field input,
+.input-field textarea {
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  color: #222;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;              /* ensures padding doesn't overflow */
+}
+
+/* === Focus State === */
+.input-field input:focus,
+.input-field textarea:focus {
+  border-color: #6a00f4;              /* vibrant purple highlight */
+  outline: none;
+}
+
+/* === Error State === */
+.input-field.has-error input,
+.input-field.has-error textarea {
+  border-color: #e63946;              /* red border for validation errors */
+}
+
+/* === Error Message === */
+.error-text {
+  color: #e63946;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+/* === Date & Time Input Overrides === */
+.input-field input[type="date"],
+.input-field input[type="time"] {
+  width: 150px;                        /* fixed width for compact layout */
+  padding: 0.6rem 0.8rem;
+  height: auto;
+  font-size: 1rem;
+  cursor: pointer;
+  box-sizing: border-box;
+}

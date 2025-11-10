@@ -1,0 +1,8 @@
+/* === Leaderboard Stats Container === */
+.leaderboard-stats {
+  display: flex;              /* horizontal layout for stat boxes */
+  flex-wrap: wrap;            /* allows wrapping on smaller screens */
+  gap: 1rem;                  /* spacing between stat boxes */
+  justify-content: center;   /* center-align stat boxes */
+  margin-bottom: 2rem;       /* spacing below stats section */
+}

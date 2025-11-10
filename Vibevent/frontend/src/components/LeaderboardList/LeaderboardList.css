@@ -1,0 +1,6 @@
+/* === Leaderboard List Container === */
+.leaderboard-list {
+  display: flex;              /* vertical stack of rows */
+  flex-direction: column;
+  gap: 0.5rem;                /* spacing between rows */
+}

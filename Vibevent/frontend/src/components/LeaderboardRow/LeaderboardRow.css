@@ -1,0 +1,68 @@
+/* === Leaderboard Row Container === */
+.leaderboard-row {
+  display: flex;                          /* horizontal layout */
+  align-items: center;
+  justify-content: space-between;        /* spread content evenly */
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid transparent;         /* highlight border on top ranks */
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* === Hover Animation === */
+.leaderboard-row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === Rank Highlights === */
+.leaderboard-row.gold {
+  border-color: #ffd700; /* gold */
+}
+
+.leaderboard-row.silver {
+  border-color: #c0c0c0; /* silver */
+}
+
+.leaderboard-row.bronze {
+  border-color: #cd7f32; /* bronze */
+}
+
+/* === Rank Number === */
+.rank {
+  font-weight: bold;
+  color: #555;
+  width: 40px;
+  text-align: center;
+}
+
+/* === Profile Image === */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* === Display Name === */
+.name {
+  flex: 1;
+  font-weight: 600;
+  color: #222;
+}
+
+/* === Event Count === */
+.events {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* === Points Display === */
+.points {
+  font-weight: bold;
+  color: #333;
+}

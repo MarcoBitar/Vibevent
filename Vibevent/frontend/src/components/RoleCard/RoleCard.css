@@ -1,0 +1,36 @@
+/* === Role Card Container === */
+.role-card {
+  background-color: #fff;               /* clean white background */
+  border: 2px solid #eee;               /* subtle border */
+  border-radius: 12px;                  /* soft rounded corners */
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;                      /* clickable interaction */
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* soft elevation */
+}
+
+/* === Hover Feedback === */
+.role-card:hover {
+  border-color: #007bff;                /* highlight border on hover */
+  transform: translateY(-2px);          /* subtle lift effect */
+}
+
+/* === Icon Styling === */
+.role-icon {
+  font-size: 2rem;                      /* large icon size */
+  margin-bottom: 0.75rem;
+}
+
+/* === Title Styling === */
+.role-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* === Description Styling === */
+.role-description {
+  font-size: 0.95rem;
+  color: #555;                          /* muted text */
+}

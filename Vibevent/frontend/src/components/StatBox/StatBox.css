@@ -1,0 +1,43 @@
+/* === StatBox Container === */
+.stat-box {
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(180, 122, 234, 0.1); /* subtle purple glow */
+  flex: 1 1 220px;                  /* responsive flex sizing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  border-top: 5px solid transparent; /* colored border applied via variant */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* === Hover Feedback === */
+.stat-box:hover {
+  transform: translateY(-4px);       /* subtle lift */
+  box-shadow: 0 6px 16px rgba(180, 122, 234, 0.2); /* enhanced glow */
+}
+
+/* === Variant Borders === */
+.stat-box.purple  { border-top-color: #7b61ff; }
+.stat-box.pink    { border-top-color: #ff61a6; }
+.stat-box.green   { border-top-color: #4ccf90; }
+.stat-box.orange  { border-top-color: #ff9f40; }
+.stat-box.blue    { border-top-color: #00aaff; }
+.stat-box.gray    { border-top-color: #999; }
+
+/* === Stat Value === */
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a0e78;                   /* deep purple for emphasis */
+  text-align: center;
+}
+
+/* === Stat Label === */
+.stat-label {
+  font-size: 0.95rem;
+  color: #777;                      /* muted label */
+  text-align: center;
+}

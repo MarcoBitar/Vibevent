@@ -1,0 +1,27 @@
+/* === Empty State Container === */
+.empty-state {
+  text-align: center;              /* center-align all text */
+  padding: 2rem;                   /* outer spacing */
+  color: #555;                     /* neutral text color */
+  display: flex;
+  flex-direction: column;          /* stack icon, title, message, button */
+  align-items: center;             /* center horizontally */
+  gap: 1rem;                       /* vertical spacing between elements */
+}
+
+/* === Icon Styling === */
+.empty-icon {
+  font-size: 3rem;                 /* large emoji or icon */
+}
+
+/* === Title Styling === */
+.empty-title {
+  font-size: 1.25rem;              /* slightly larger than base */
+  font-weight: 600;                /* semi-bold for emphasis */
+}
+
+/* === Message Styling === */
+.empty-message {
+  font-size: 1rem;                 /* base font size */
+  max-width: 400px;                /* readable line length */
+}

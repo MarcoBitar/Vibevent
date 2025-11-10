@@ -1,0 +1,16 @@
+/* === Chart Container === */
+.trend-chart {
+  margin-bottom: 2rem;                   /* spacing below chart block */
+  padding: 1rem;
+  background-color: #fafafa;             /* soft gray background */
+  border-radius: 12px;                   /* rounded corners */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04); /* subtle elevation */
+}
+
+/* === Chart Title === */
+.trend-chart h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;                           /* dark neutral for readability */
+}

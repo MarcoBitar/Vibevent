@@ -1,0 +1,166 @@
+/* === Root Container === */
+.user-dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 90vw;
+  background-color: #fafafa;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-right: 5rem;
+}
+
+/* === Greeting Section === */
+.user-greeting {
+  height: 160px;
+  background: linear-gradient(135deg, #6a00f4, #9b5cff); /* vibrant gradient */
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.user-greeting .pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;               /* circular avatar */
+  object-fit: cover;
+  border: 3px solid #b47aea;        /* accent border */
+}
+
+.user-greeting h2,
+.user-greeting p {
+  color: #fff;
+  position: relative;
+  top: -6px;
+  margin: 0;
+}
+
+.user-greeting h2 {
+  font-size: 1.6rem;
+}
+
+.user-greeting p {
+  font-size: 1.3rem;
+}
+
+/* === Stats Section === */
+.user-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* responsive grid */
+  margin: 2.5rem auto;
+  width: 95%;
+  gap: 0.5rem;
+}
+
+.stat-box {
+  width: 85%;
+  margin: auto;
+}
+
+/* === RSVP Section === */
+.user-rsvp-section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  margin: 0 auto 2rem;
+  width: 90%;
+}
+
+.user-rsvp-section h3 {
+  color: #4a0e78;
+  margin-bottom: 0.5rem;
+}
+
+.user-rsvp-section .note {
+  color: #999;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+/* === Loading State === */
+.loading {
+  text-align: center;
+  padding: 4rem;
+  color: #4a0e78;
+  font-size: 1.2rem;
+}
+
+/* === Tablet (≤1024px) === */
+@media (max-width: 1024px) {
+  .user-dashboard {
+    width: 95vw;
+    padding-right: 2.5rem; /* push a bit from right */
+  }
+
+  .user-greeting {
+    padding: 1rem 2rem;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .user-greeting .pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .user-greeting h2 {
+    font-size: 1.4rem;
+  }
+
+  .user-stats {
+    width: 93%;
+  }
+
+  .user-rsvp-section {
+    width: 92%;
+  }
+}
+
+/* === Mobile (≤480px) === */
+@media (max-width: 480px) {
+  .user-dashboard {
+    width: 100vw;
+    padding-right: 2rem; /* margin-right simulation */
+  }
+
+  .user-greeting {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+    border-radius: 0;
+    text-align: left;
+  }
+
+  .user-greeting .pic {
+    width: 70px;
+    height: 70px;
+  }
+
+  .user-greeting h2 {
+    font-size: 1.2rem;
+  }
+
+  .user-greeting p {
+    font-size: 1rem;
+  }
+
+  .user-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    padding-right: 1rem; /* slight push */
+  }
+
+  .user-rsvp-section {
+    width: 90%;
+    padding: 1rem;
+  }
+}

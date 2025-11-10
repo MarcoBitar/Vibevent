@@ -1,0 +1,196 @@
+/* === Page Container === */
+.user-tab-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 99.1vw;               /* fills screen without horizontal scroll */
+  max-width: 100vw;
+  background-color: #fafafa;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+/* === Main Content Area === */
+.content-area {
+  flex: 1;
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 2rem 4rem;
+  overflow-x: hidden;
+}
+
+/* === Events Banner === */
+.campus-events-banner {
+  width: 100%;
+  height: 160px;
+  padding: 0 2rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #6a00f4, #9b5cff); /* vibrant gradient */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+}
+
+.campus-events-banner h1 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* === Search Bar Container === */
+.search-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 90%;
+  max-width: 650px;
+  margin: 5px 0;
+}
+
+/* === Search Input Field === */
+.event-search-input {
+  color: #000;
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.event-search-input:focus {
+  border-color: #6a00f4;
+  box-shadow: 0 0 0 2px rgba(106, 0, 244, 0.2);
+}
+
+/* === Search Button Hover (if used) === */
+.event-search-btn:hover {
+  background-color: #5500c4;
+  transform: translateY(-2px);
+}
+
+/* === Featured Event Section === */
+.featured-event {
+  width: 110% !important;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+/* === Event Grid Layout === */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+/* === Tablet Breakpoint (≤1500px) === */
+@media (max-width: 1500px) {
+  .user-tab-page {
+    padding-right: 2rem;
+  }
+
+  .campus-events-banner {
+    width: 92%;
+    height: 130px;
+    padding: 0 2rem;
+    border-radius: 18px;
+  }
+
+  .campus-events-banner h1 {
+    font-size: 1.7rem;
+  }
+
+  .search-container {
+    width: 80%;
+    padding: 0.7rem 1rem;
+  }
+
+  .content-area {
+    padding: 1.5rem 2rem;
+    width: 93%;
+  }
+
+  .featured-event {
+    width: 112% !important;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+
+  .event-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* === Mobile Breakpoint (≤480px) === */
+@media (max-width: 480px) {
+  .user-tab-page {
+    padding-right: 1rem;
+  }
+
+  .campus-events-banner {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6a00f4, #8d3aff);
+  }
+
+  .campus-events-banner h1 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  .search-container {
+    flex-direction: column;
+    width: 90%;
+    padding: 0.7rem 1rem;
+    gap: 0.7rem;
+    box-shadow: none;
+  }
+
+  .event-search-input {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .content-area {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .featured-event {
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,16 @@
+/* === Container for Auth Visual === */
+.auth-image-container {
+  flex: 1; /* allows it to grow and fill available space */
+  display: flex;
+  align-items: center; /* vertically center image */
+  justify-content: center; /* horizontally center image */
+  padding: 2rem; /* spacing around image */
+}
+
+/* === Auth Image Styling === */
+.auth-image {
+  max-width: 100%; /* responsive scaling */
+  height: auto; /* maintain aspect ratio */
+  border-radius: 12px; /* rounded corners */
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08); /* soft drop shadow for depth */
+}

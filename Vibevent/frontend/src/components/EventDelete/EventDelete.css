@@ -1,0 +1,15 @@
+/* === Delete Modal Content Styling === */
+.event-delete {
+  text-align: center;        /* center-align text */
+  padding: 2rem;             /* inner spacing */
+  color: #000;               /* black text for contrast */
+  font-size: 24px;           /* large readable font */
+}
+
+/* === Action Button Row === */
+.delete-actions {
+  display: flex;             /* horizontal layout */
+  justify-content: center;   /* center buttons */
+  gap: 1rem;                 /* spacing between buttons */
+  margin-top: 1.5rem;        /* spacing from message */
+}

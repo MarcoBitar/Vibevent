@@ -1,0 +1,27 @@
+.leaderboard-page {
+  padding: 2rem;
+  background-color: #fff;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: #2d2d2d;
+}
+
+.leaderboard-header {
+  text-align: center;
+  background: linear-gradient(135deg, #6a00f4, #9b5cff);
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(180, 122, 234, 0.15);
+}
+
+.leaderboard-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.leaderboard-header p {
+  font-size: 1rem;
+  color: #fff;
+}

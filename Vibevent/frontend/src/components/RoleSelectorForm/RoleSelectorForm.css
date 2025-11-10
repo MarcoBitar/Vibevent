@@ -1,0 +1,188 @@
+/* === Fullscreen Modal Wrapper === */
+.role-form {
+  position: fixed; /* locks to viewport */
+  inset: 0; /* top/right/bottom/left: 0 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.50); /* dark overlay */
+  backdrop-filter: blur(3px); /* soft blur behind modal */
+  z-index: 999; /* floats above everything */
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 0.4s ease-in-out; /* entry animation */
+}
+
+/* === Logo Branding === */
+.logo-container {
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+/* === Heading === */
+.role-form h2 {
+  margin: 10px 0 25px;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* === Role Selection Container === */
+.role-options {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: rgba(255, 255, 255, 0.15); /* frosted glass effect */
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 40px 50px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3); /* depth */
+  text-align: center;
+  width: 400px;
+  max-width: 90%;
+}
+
+/* === Individual Role Card === */
+.role-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+  border-left: 4px solid transparent; /* colored on hover/target */
+}
+
+.role-card:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.03); /* subtle lift */
+}
+
+/* === Role-specific accent colors === */
+.role-card:first-child {
+  border-left: 4px solid #00bfff; /* student: blue */
+}
+
+.role-card:last-child {
+  border-left: 4px solid #ff4ecb; /* club: pink */
+}
+
+/* === Role Info Block === */
+.role-info {
+  text-align: left;
+}
+
+.role-icon {
+  font-size: 26px;
+}
+
+.role-info h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.role-info p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* === Back Button === */
+button {
+  margin-top: 25px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+/* === Entry Animation === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+/* === Tablet: max-width 1500px === */
+@media (max-width: 1500px) {
+  .role-form {
+    padding: 20px;
+  }
+
+  .role-options {
+    padding: 30px 35px;
+    width: 350px;
+  }
+
+  .role-form h2 {
+    font-size: 22px;
+  }
+
+  .role-info h3 {
+    font-size: 16px;
+  }
+
+  .role-info p {
+    font-size: 12px;
+  }
+
+  .role-icon {
+    font-size: 22px;
+  }
+
+  .role-card {
+    padding: 14px 18px;
+  }
+}
+
+/* === Mobile: max-width 480px === */
+@media (max-width: 480px) {
+  .role-form {
+    padding: 15px;
+  }
+
+  .role-options {
+    padding: 25px 20px;
+    width: 90%; /* full width on small screens */
+  }
+
+  .role-form h2 {
+    font-size: 20px;
+  }
+
+  .role-info h3 {
+    font-size: 15px;
+  }
+
+  .role-info p {
+    font-size: 12px;
+  }
+
+  .role-icon {
+    font-size: 20px;
+  }
+
+  .role-card {
+    padding: 12px 15px;
+  }
+}

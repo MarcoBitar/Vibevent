@@ -1,0 +1,15 @@
+/* === Toast Container === */
+.swipe-toast {
+  position: fixed;                    /* floats above layout */
+  bottom: 24px;                       /* anchored near bottom */
+  left: 40%;                          /* horizontal offset */
+  transform: translateX(-50%);        /* center relative to left offset */
+  background: #f3e8ff;                /* soft lavender background */
+  color: #000;
+  border: 2px solid #ba7ef3;          /* vibrant purple border */
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* subtle elevation */
+  z-index: 9999;                      /* topmost layer */
+  cursor: grab;                       /* indicates draggable interaction */
+}

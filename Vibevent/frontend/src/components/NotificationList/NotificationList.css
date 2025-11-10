@@ -1,0 +1,47 @@
+/* === Bell Icon Wrapper === */
+.bell-wrapper {
+  position: relative;           /* anchors dropdown to bell */
+  display: inline-block;
+}
+
+/* === Notification Dropdown === */
+.notification-list {
+  position: fixed;              /* floats independently of parent */
+  top: 100px;                   /* offset below header */
+  right: 0rem;                  /* aligned to screen edge */
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;                 /* above other elements */
+  color: #000;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;             /* scroll if overflow */
+  padding: 10px;
+}
+
+/* === Empty State Message === */
+.no-notifications {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  padding: 10px 0;
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 800px) {
+  .notification-list {
+    width: 280px;
+    top: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .notification-list {
+    right: 0.5rem;
+    width: 250px;
+    top: 60px;
+  }
+}

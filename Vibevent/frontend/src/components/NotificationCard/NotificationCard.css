@@ -1,0 +1,51 @@
+/* === Notification Card Container === */
+.notification-card {
+  background-color: #f9f5ff;           /* default lavender background */
+  border: 2px solid #a855f7;           /* vibrant purple border */
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  color: #000;
+}
+
+/* === Hover Feedback === */
+.notification-card:hover {
+  background-color: #ede9fe;           /* slightly darker lavender */
+  transform: translateY(-2px);         /* subtle lift effect */
+}
+
+/* === Unread State === */
+.notification-card.unread {
+  background-color: #f3e8ff;           /* stronger highlight for unread */
+  font-weight: 600;
+}
+
+/* === Read State === */
+.notification-card.read {
+  opacity: 0.7;                        /* faded appearance for read */
+}
+
+/* === Removing Transition === */
+.notification-card.removing {
+  opacity: 0;                          /* fade out */
+  transform: translateY(-10px);        /* lift and vanish */
+  pointer-events: none;                /* disable interaction */
+}
+
+/* === Notification Type Label === */
+.notif-type {
+  font-size: 0.9rem;
+  color: #6b21a8;                      /* deep purple */
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+/* === Notification Message Content === */
+.notif-content {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.3;
+}
